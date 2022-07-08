@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    char str[]={'s','a','g','a','r'};
+    int l=0;
+    int r=str.length-1;
+    while(l<r){
+        char temp=str[l];
+        str[l]=str[r];
+        str[r]=temp;
+        l++;
+        r--;
+
+    }
+    
+ for(char s:str){
+     System.out.print(s+" ");
+ }
+  
+    }
+}
