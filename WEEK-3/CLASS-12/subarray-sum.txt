@@ -1,0 +1,15 @@
+class Solution {
+    int rem=0, prevSum=0;
+   Set<Integer> seen= new HashSet<>();
+    public boolean checkSubarraySum(int[] nums, int k) {
+        
+        for(int num : nums){
+            rem=(prevSum+num)%k;
+            if(seen.contains(rem)) return true;
+            seen.add(prevSum);
+            prevSum=rem;
+        }
+        
+        return false;
+    }
+}
