@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+   int  n = sc.nextInt();
+   int cubeSum = 0;
+   int  num=0;
+   int r=0;
+       
+        num = n;
+        while (num > 0)
+        {
+            r = num % 10;
+            cubeSum = cubeSum + (r * r * r);
+            num = num / 10;
+        }
+        if (n == cubeSum)
+        {
+            System.out.println("Armstrong Number");
+        }
+        else
+        {
+            System.out.println("Not Armstrong Number");
+        }
+
+    }
+}

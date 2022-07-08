@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int num = 121; 
+    int reverse = 0;
+    int remainder;
+    int original = num;
+    while (num != 0) {
+      remainder = num % 10;
+      reverse= reverse * 10 + remainder;
+      num /= 10;
+    }
+    
+    if (original == reverse) {
+      System.out.println(original + " is Palindrome.");
+    }
+    else {
+      System.out.println(original + " is not Palindrome.");
+    }
+
+    }
+}

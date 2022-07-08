@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int arr[]={1,9,0,3,2,8};
+    Arrays.sort(arr);
+    int l=0;
+   int  r = arr.length-1;
+   int target=3;
+   while(l<r){
+       int curSum=arr[l]+arr[r];
+       if(curSum<target){
+           l++;
+       }
+       else if(curSum>target){
+           r--;
+       }
+       else{
+           System.out.println(arr[l]+" "+arr[r]);
+           l++;
+           r--;
+       }
+   }
+
+  
+  
+
+
+ 
+    }
+}

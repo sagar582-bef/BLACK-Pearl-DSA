@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+   int  n = sc.nextInt();
+   int startLimit=1;
+   int val=1;
+   int temp=1;
+   int range=2;
+   for(int i=0;i<n;i++){
+       temp=val;
+       for(int j=0;j<startLimit;j++){
+           System.out.print(val+" ");
+           val--;
+       }
+       startLimit++;
+       System.out.println();
+       val=temp+range;
+       range++;
+   }
+
+ 
+    }
+}
